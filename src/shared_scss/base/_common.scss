@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font;
+  overflow-y: overlay;
+}
+body.dark-theme {
+  background-color: $modal-content;
+  background-image: url(../images/mobile/noise_body_mobile.jpg);
+  color: $text-cl;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include for-size(tablet) {
+    background-image: url(../images/tablet/noise_body_tablet@2x.png),
+      url(../images/tablet/bg-black-body-tablet@2x.png);
+  }
+
+  @include for-size(desktop) {
+    background-image: url(../images/desktop/noise_body_desktop@2x.png),
+      url(../images/desktop/bg-black-body-desktop@2x.png);
+  }
+}
+
+body.light-theme {
+  background-color: $modal-bg;
+  background-image: url(../images/light-theme/mobile/noise_body_mobile_light.jpg);
+  color: $modal-content;
+  background-size: contain;
+  @include for-size(tablet) {
+    background-image: url(../images/light-theme/tablet/bg_body_tablet_light@1x.jpg);
+  }
+  @include for-size(desktop) {
+    background-image: url(../images/light-theme/desktop/bg_body_desktop_light@1x.jpg);
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  // outline: 1px solid red;
+
+  @include for-size(mobile) {
+    width: 270px;
+  }
+
+  @include for-size(tablet) {
+    width: 594px;
+  }
+
+  @include for-size(desktop) {
+    width: 930px;
+  }
+}
+.main-container {
+  position: relative;
+  top: -51px;
+  margin-bottom: -9px;
+
+  @include for-size(tablet) {
+    top: -47px;
+    margin-bottom: 23px;
+  }
+
+  @include for-size(desktop) {
+    top: -46px;
+    margin-bottom: 29px;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}

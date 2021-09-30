@@ -1,0 +1,108 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // transform: translate3d(-50%, -50%, 0);
+  @include for-size(mobile-only) {
+    margin-bottom: 10px;
+  }
+  @include for-size(tablet) {
+    margin-bottom: 13px;
+  }
+
+  &:before {
+    @include for-size(mobile-only) {
+      display: none;
+    }
+
+    content: 'DARK';
+    position: absolute;
+    left: -50px;
+    top: 15px;
+    font-size: 15px;
+  }
+
+  &:after {
+    @include for-size(mobile-only) {
+      display: none;
+    }
+
+    content: 'LIGHT';
+    position: absolute;
+    right: -50px;
+    top: 15px;
+    font-size: 15px;
+  }
+
+  input {
+    display: none;
+
+    &:checked + label {
+      background-color: $input-bg;
+      box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px $btn;
+
+      &:before {
+        width: 5px;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.toggle.dark-theme {
+  &:before {
+    color: $primary-accent;
+    font-weight: bold;
+  }
+
+  &:after {
+    color: $input-bg;
+  }
+}
+
+.toggle.light-theme {
+  &:before {
+    color: rgb(180, 180, 180);
+  }
+
+  &:after {
+    color: $btn;
+    font-weight: bold;
+  }
+}
+
+.toggle-lable {
+  @include for-size(mobile-only) {
+    width: 30px;
+    height: 30px;
+  }
+
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: $primary-accent;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1), 0px 9px 15px 0px $btn;
+  -webkit-tap-highlight-color: transparent;
+
+  &:before {
+    @include for-size(mobile-only) {
+      height: 15px;
+      width: 15px;
+      box-shadow: inset 0px 0px 0px 5px #fff;
+    }
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s cubic-bezier(0, -1.85, 0.27, 1.75);
+    height: 20px;
+    width: 20px;
+    background-color: $btn;
+    border-radius: 46px;
+    box-shadow: inset 0px 0px 0px 5px #fff;
+  }
+}

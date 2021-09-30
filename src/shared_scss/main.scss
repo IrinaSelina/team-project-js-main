@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/common';
+@import '../services/placeholder/placeholder';
+@import '../components/logo/footer/footer';
+@import '../components/logo/logo';
+@import '../components/header/header';
+@import '../components/card-list/card-list';
+@import '../components/search-form/search-form';
+@import '../components/card-list/card-list-item';
+@import '../components/modal/modal';
+@import '../components/scroll-up/scroll_up';
+@import '../components/theme-switch/theme-switch';
+@import '../components/pagination/pagination';
+@import '../components/tic-tac-toe/game-styles';
+@import './utils/animation-keyframes';
+@import '../components/authentication/auth';
+@import '../components/developer-card/dev-card-markup';
+@import '../components/developer-card/dev-card-sotial-list';
+@import '../components/modal-timer/modal-timer';
+@import '../components/decoration/bgr-decor';
+@import '../components/share-buttom/share';
+@import '../components/category_list/category_list';
+@import '../components/genres/genres-list';
+

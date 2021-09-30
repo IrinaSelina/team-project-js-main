@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Event Buster</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://pagecdn.io/lib/easyfonts/digital-numbers.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+  </head>
+  <body>
+    <header class="header header-overlay">
+      <div class="genre-section">
+        <ul class="genre-list">
+          <li class="genre-item" data-id="vvG1VZG5LseKSl">
+            <img
+              class="genre-header"
+              src="https://img.discogs.com/xl6bSJi8tNBFqKD3qB8B-E2yspg=/fit-in/500x503/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4533572-1405215864-9234.jpeg.jpg"
+              data-genre="KZFzniwnSyZfZ7v7nl"
+              alt="TOP"
+            />
+            <div class="card-list-item__info">
+              <p data-genre="KZFzniwnSyZfZ7v7nl" class="category-event">TOP</p>
+            </div>
+          </li>
+          <li class="genre-item" data-id="vvG1VZG5LseKSl">
+            <img
+              class="genre-header"
+              src="https://cutewallpaper.org/21/sports-wallpaper-hd/Sports-Wallpaper-Download-free-HD-Photos-for-Desktop,-PC-.png"
+              data-genre="KZFzniwnSyZfZ7v7nE"
+              alt="Sports"
+            />
+            <div class="card-list-item__info">
+              <p data-genre="KZFzniwnSyZfZ7v7nE" class="category-event">
+                Sports
+              </p>
+            </div>
+          </li>
+          <li class="genre-item" data-id="vvG1VZG5LseKSl">
+            <img
+              class="genre-header"
+              src="http://youtube.stepfor.top/wp-content/uploads/2018/04/1354542445_vector-music-spectrum_1366x768.jpg"
+              data-genre="KZFzniwnSyZfZ7v7nJ"
+              alt="Music"
+            />
+            <div class="card-list-item__info">
+              <p data-genre="KZFzniwnSyZfZ7v7nJ" class="category-event">
+                Music
+              </p>
+            </div>
+          </li>
+          <li class="genre-item" data-id="vvG1VZG5LseKSl">
+            <img
+              class="genre-header"
+              src="https://www.ktk.kz/getimage/mainpagebig/87949"
+              data-genre="KZFzniwnSyZfZ7v7na"
+              alt="Arts & Theatre"
+            />
+            <div class="card-list-item__info">
+              <p data-genre="KZFzniwnSyZfZ7v7na" class="category-event">
+                Arts & Theatre
+              </p>
+            </div>
+          </li>
+          <li class="genre-item" data-id="vvG1VZG5LseKSl">
+            <img
+              class="genre-header"
+              src="https://images.freecreatives.com/wp-content/uploads/2015/09/avengers-wallpapers-.jpg"
+              data-genre="KZFzniwnSyZfZ7v7nn"
+              alt="Film"
+            />
+            <div class="card-list-item__info">
+              <p data-genre="KZFzniwnSyZfZ7v7nn" class="category-event">Film</p>
+            </div>
+          </li>
+          <li class="genre-item" data-id="vvG1VZG5LseKSl">
+            <img
+              class="genre-header"
+              data-genre="KZFzniwnSyZfZ7v7n1"
+              src="https://m.buro247.ru/images/mo/1000x600-200320-04.png.webp"
+              alt="Orlando Philharmonic Orchestra"
+            />
+            <div class="card-list-item__info">
+              <p data-genre="KZFzniwnSyZfZ7v7n1" class="category-event">
+                Miscellaneous
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="logo-container dark-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/logo-desktop-@1x.png 1x,
+              ./images/desktop/logo-desktop-@2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/logo-tablet-@1x.png 1x,
+              ./images/tablet/logo-tablet-@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/logo-mobile-@1x.png 1x,
+              ./images/mobile/logo-mobile-@2x.png 2x
+            "
+            media="(min-width:767px)"
+          />
+          <img
+            src="./images/mobile/logo-mobile-@1x.png"
+            alt="Описание изображени для всех версий"
+          />
+        </picture>
+      </div>
+      <div class="logo-container light-logo">
+        <picture>
+          <source
+            srcset="
+              ./images/light-theme/desktop/logo-desktop-@1x.png 1x,
+              ./images/light-theme/desktop/logo-desktop-@2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/light-theme/tablet/logo-tablet-@1x.png 1x,
+              ./images/light-theme/tablet/logo-tablet-@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/light-theme/mobile/logo-mobile-@1x.png 1x,
+              ./images/light-theme/mobile/logo-mobile-@2x.png 2x
+            "
+            media="(min-width:767px)"
+          />
+          <img
+            src="./images/light-theme/mobile/logo-mobile-@2x.png"
+            alt="Светлая тема"
+          />
+        </picture>
+      </div>
+
+      <!-- Разметка переключателя темы -->
+      <div class="headerOptions">
+        <div class="toggle">
+          <input type="checkbox" id="toggle" />
+          <label class="toggle-lable" for="toggle"></label>
+        </div>
+        <button class="btn-sign btn-user">
+          <span class="material-icons material-icons-user">
+            account_circle
+          </span>
+        </button>
+        <button class="btn-list-event-user btn-user">
+          <span class="material-icons material-icons-user">
+            favorite_border
+          </span>
+        </button>
+      </div>
+      <div class="container header-main">
+        <!-- Разметка переключателя темы -->
+        <div class="header-title-container">
+          <h1 class="header-title">FIND BEST EVENTS AROUND THE WORLD</h1>
+        </div>
+        <div>
+          <form class="form-search" action="submit" autocomplete="off">
+            <label for="search-event" class="search-event_position-svg">
+              <input
+                class="form-search-event"
+                id="search-event"
+                type="text"
+                placeholder="Start searching"
+              />
+              <span class="material-icons form-search_icon-search">
+                zoom_in
+              </span>
+            </label>
+            <label for="search-country" class="search-country_position-svg">
+              <select name="country" id="search-country" class="form-select">
+                <option
+                  class="form-select-option"
+                  value=""
+                  disabled
+                  selected
+                  hidden
+                >
+                  Choose country
+                </option>
+                <option value="All">All countries</option>
+              </select>
+              <span class="material-icons form-search_icon-arrow">
+                arrow_drop_down
+              </span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container main-container">
+        <div class="bg-decor-elements">
+          <div class="decor-1"></div>
+          <div class="decor-2"></div>
+          <div class="decor-3"></div>
+          <div class="decor-4 kaput"></div>
+          <div class="decor-5 kaput"></div>
+          <div class="ellipse-half kaput"><div class="decor-6"></div></div>
+          <div class="decor-7 kaput"></div>
+          <div class="decor-8 kaput"></div>
+          <div class="decor-9 kaput"></div>
+          <div class="decor-10 kaput"></div>
+          <div class="decor-11 kaput"></div>
+          <div class="decor-12"></div>
+          <div class="decor-13 kaput"></div>
+        </div>
+        <ul class="card-list list"></ul>
+        <div class="pag"><ul class="pag__list"></ul></div>
+        <!-- loader -->
+        <div class="lds-roller disable">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <a class="back_to_top" title="Наверх">
+          <div class="wrapper-scroll">
+            <svg
+              class="svg-theme white-svg-scroll"
+              width="18px"
+              height="17px"
+              viewbox="0 0 18 17"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g
+                id="prev"
+                transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)"
+              >
+                <polygon
+                  class="arrow"
+                  points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"
+                ></polygon>
+                <polygon
+                  class="arrow-fixed"
+                  points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"
+                ></polygon>
+                <path
+                  d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="is-hidden backdrop"></div>
+      <div class="is-hidden backdrop-auth">
+        <div class="modal-sign-in">
+          <button type="button" class="modal-sign-in-close-btn">
+            <span class="material-icons"> close </span>
+          </button>
+          <h2 class="form-title">sign in</h2>
+          <form action="submit" class="form-sign-in">
+            <!-- <div class="form-field">
+              <label for="name" class="label-field">Name</label>
+              <input type="text" name="name" id="name" class="form-input" required>
+            </div> -->
+              <div class="modal-signin-inputs-js">
+                <div class="form-field">
+                  <label for="email" class="label-field">E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="password" class="label-field">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-input"
+                    required
+                  />
+                </div>
+              </div>
+              
+            <div class="form-btn-wrapper">
+              <button type="submit" class="btn-sign-in btn-form">
+                sign in
+              </button>
+              <button type="submit" class="btn-register btn-form">
+                register
+              </button>
+              <button type="submit" class="btn-sign-out btn-form">
+                sign out
+              </button>
+            </div>
+            <p class="form-auth-error"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <h3 class="footer">
+          © 2021 | All Rights Reserved | Developed with
+          <span class="footer-heart">♥</span>
+          <a href="#" class="dev-link">by GoIT Students</a>
+        </h3>
+      </div>
+    </footer>
+  </body>
+</html>
